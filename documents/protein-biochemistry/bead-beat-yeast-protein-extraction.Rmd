@@ -1,0 +1,151 @@
+---
+title: Bead beating for yeast protein extraction
+author: Eric Bryant, eeb2139@columbia.edu
+date: 2016-06-22
+---
+
+**Goal:** Extract proteins from yeast by physically breaking them open with small glass beads. \
+**Motivation:** Yeast have a robust cell wall that must be physically sheared or chemically digested to release cell contents (e.g. bead beating, or Zymolase treatment).
+
+# Protocol
+
+Before starting, make 
+**2x lysis buffer**, and
+**2x protease inhibitor cocktail**.
+Grow enough **yeast** to have 2 mL at OD600 of 0.5 - 1 (standardize ODs within 
+experiments to keep protein concentrations consistent).
+
+**Pre-chill everything that might touch a protein. Keep everything on ice.**
+
+1. Make **1x lysis buffer** and chill on ice. Recipe for 2 mL (enough for 10 
+   samples):
+    - 1 mL (2x lysis buffer)
+    - 1 mL (2x protease inhibitor cocktail)
+    - 1 uL (2-Mercaptoethanol)
+2. Place an aliquot of **water**, an aliquot of **0.5 mm beads**, and labeled 
+   **tubes** on ice (1 bead-beater and 2 microfuge tubes per sample).
+5. Pellet yeast culture (3000 RPM 5 min).
+6. Resuspend pellet in **cold water** to standardized OD600 of 0.5 - 1.
+7. Spin down 2 mL of cells in bead beater tube and pipette off supernatant.
+    - consider flash freezing pellets in liquid nitrogen for long term -80C 
+      storage (freezing will aid lysis).
+4. Add **100 uL of cold 0.5 mm glass beads**, and 
+   **100 uL of cold 1x lysis buffer**.
+9. Bead beat at highest speed for 30 seconds 4 times (3-5 times is common) 
+   with at least 1 min on ice between bead beating to cool samples.
+10. Transfer samples to **new tube**. Pipette from bottom of tube to separate 
+    sample from beads. 
+11. Rinse beads with **100 uL of cold 1x lysis buffer**, and add to sample 
+    tubes.
+12. Spin in 4C microcentrifuge at max speed (10,000 g) for 10 minutes to 
+    remove "crud".
+     - Ultracentrifugation >100,000 g for 30 min is considered "cleaner" for 
+       some "protein refolding" or "expensive column" applications.
+13. Transfer supernatant to **final tube**.
+14. (optional) Measure protein concentration (e.g. Bradford assay).
+     - Aim for a minimum of 10ug for Western blot. Standardize protein 
+       concentrations by adding cold 1x lysis buffer.
+15. Store at -20C or -80C until next step.
+
+# What next?
+
+- First attempt? boil in SDS containing sample buffer for SDS-PAGE followed by 
+  total protein visualization and Western blot.
+- If extraction seems messy consider TCA precipitation of proteins
+- If samples vary in total protein concentration, consider standardizing your 
+  samples (e.g. bradford assay)
+- Doing any affinity purification; immunoprecipitation? Make sure the reagents 
+  are compatible with the lysis buffer - reformulate lysis buffer, or dialyse if necessary.
+
+\newpage
+
+## Materials
+
+### Yeast
+
+Aiming for 2 mL of OD600 0.5 - 1.
+
+### 0.5 mm beads
+
+Acid washed glass/silica beads. 0.5 mm is good for yeast.
+
+### Tubes
+
+For each sample:
+
+- 1x 2 mL bead beater tube (round bottom screw cap)
+- 2x 1.5 mL microcentrifuge tubes
+
+### 1x Lysis buffer:
+
+2 mL recipe: 1mL 2x Lysis buffer + 1 mL 2x protease inhibitor cocktail + 1 uL 
+2-ME
+
+- 50 mM Tris-HCL pH ~7.6
+- 100 mM NaCL
+- 10% glycerol
+- 1x protease inhibition cocktail
+    - 1 mM EDTA (note that this may interfere with Ni-column purification)
+    - Protease inhibitors
+- 0.05% 2-ME
+
+### 2x Lysis buffer:
+
+- 100 mM Tris-HCL pH 8  (from 2M stock)
+- 200 mM NaCL (from 2M stock)
+- 20% glycerol
+
+Google "[EMBL choice of lysis buffer]" for motivation for this recipe.
+
+For Ni-column (e.g. his tag) purification the NaCl concentration is usually 
+200 mM. For ion exchange chromatography do not add salt. See **Common 
+additives to lysis buffer** for special applications. Consider using HEPES if 
+there is concern that Tris may interfere with enzymatic activity. Some 
+protocols add SDS to Lysis buffer, but this can interfere with certain 
+downstream assays (e.g. Bradford assay) and may disrupt protein-protein 
+interactions.
+
+### 2x protease inhibition cocktail: 
+
+*Dangerous - wear gloves when handling*
+
+- 1 tablet in 5 mL H~2~O (vortex 3 min and briefly prior to each use)
+
+As of 2016-06-22 the Rothstein lab uses [cOmplete ULTRA Tablets], Mini, EASYpack Protease Inhibitor Cocktail tablets (version 3) stored at the bottom of 4C fridge #1. The 2x solution is stable for 1 week @ 4C and 1 month @ -20C. These tablets contain EDTA (2 mM in 2x solution) and therefore may interfere with Immobilized Metal Affinity Chromatography (e.g. Ni columns to purify His tagged proteins). The tablets are available in an EDTA free format.
+
+\newpage
+
+## Common additives to lysis buffer
+
+Source: [EMBL choice of lysis buffer]
+
+-------------------------------------------------------------------------------
+Class of additive  Example                Concentration   Purpose
+-----------------  ---------------------  --------------  ---------------------
+Salts              NaCl, KCl, (NH4)2SO4   50-150 mM       Maintain ionic 
+                                                          strength of medium
+
+Detergents         Deoxycholate,          0.1-1%          Solubilization of 
+                   Triton X-100                           poorly soluble 
+                                                          proteins
+
+Glycerol                                  5-10%           Stabilization
+
+Glucose/sucrose                           25 mM           Stabilize lysosymal 
+                                                          membranes, reduce 
+                                                          protease release
+
+Metal chelators    EDTA, EGTA             1 mM            Reduce oxidation 
+                                                          damage, chelate 
+                                                          metal ions
+
+Reducing agents    DTT, DTE               1-10 mM, 0.05%  Reduce oxidation 
+                   2-Mercaptoethanol                      damage
+
+Ligands, metals    Mg2+, ATP, GTP         1-10 mM         Stabilization
+-------------------------------------------------------------------------------
+
+Consider adding phosphatase inhibitors, or DeSUMOylase inhibitors (e.g. NEM)
+
+[cOmplete ULTRA Tablets]: http://www.sigmaaldrich.com/catalog/product/roche/05892970001
+[EMBL choice of lysis buffer]: https://www.embl.de/pepcore/pepcore_services/protein_purification/extraction_clarification/lysis_buffer_additives/index.html

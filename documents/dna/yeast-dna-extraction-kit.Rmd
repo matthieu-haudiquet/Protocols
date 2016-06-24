@@ -1,0 +1,72 @@
+---
+title: Yeast DNA extraction kit
+author: "Eric Bryant, eeb2139@columbia.edu"
+date: "June 24, 2016"
+---
+
+The Rothstein lab has a "Yeast DNA extraction kit" that can be used to purify genomic DNA from yeast (Thermo scientific Prod #78870 stored at bottom of 4C #2). A WT strain grown overnight at 30C in 5mL YPD will yield ~100mg of pelleted cells, which is appropriate for one sample to produce ~250 uL of purified genomic DNA at 100ng/uL. Use ~1 uL of this DNA as template for PCR.
+
+## Protocol
+
+1. **Pellet** a saturated 5 mL overnight culture (centrifuge 5 min @ 3000 RPM).
+
+2. **Transfer** pellet to 1.5 mL microfuge tube by resuspending in sterile H~2~O.
+
+3. **Pellet** cells (microcentrifuge 1 min @ 6000 RPM).
+
+4. **Weigh** pellet.
+
+5. **Resuspend** pellet with 8uL per 1mg pellet of **Y-PER reagent** (typically 700-1000uL).
+
+6. **Incubate** 10min @ 65C.
+
+7. **Pellet** cells and discard supernatant (microcentrifuge 5 min @ max speed).
+
+8. **Resuspend** pellet with 400 uL each of **DNA releasing reagent A and B**.
+
+9. **Incubate** 10min @ 65C.
+
+10. **Add** 200uL of **Protein Removal reagent** and invert several times.
+
+11. **Pellet** crud and transfer 1 mL supernatant to new 1.5 mL tube (microcentrifuge 5 min @ max speed).
+
+12. **Add** 600uL 100% isopropyl alcohol. Mix by gentle inversion.
+
+13. **Precipitate** genomic DNA (microcentrifuge 10 min @ max speed).
+
+14. **Dump** supernatant. Be careful not to disturb the (nearly invisible) pellet.
+
+15. **Add** 1.5 mL 70% ethanol and invert several times to wash residual salts.
+
+16. **Spin** (microcentrifuge 1 min @ max speed).
+
+17. **Aspirate** supernatant with vacuum tube until pellet is dry.
+
+18. **Resuspend** pellet in 50 uL sterile H~2~O. Wash sides of tube several times.
+
+19. **Solubilize** DNA by letting sit at room temperature for 5 min.
+
+20. **Quantitate** on nanodrop.
+
+21. **Dilute** with water to ~50-100ng/uL if necessary.
+
+\newpage
+
+## Materials
+
+#### Yeast
+
+- 70-100 mg of pelleted yeast cells per sample. This is the typical yield of one 5 mL overnight culture of WT yeast grown in YPD in a 30C shaking incubator.
+
+#### Yeast DNA extraction kit (Thermo scientific Prod #78870)
+
+- Y-EPR reagent
+- DNA releasing reagent A
+- DNA releasing reagent B
+- Protein Removal reagent
+
+#### Equipment
+
+- Microcentrifuge
+- 65C heat block
+- 2x 1.5 mL microcentrifuge tubes
