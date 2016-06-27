@@ -10,7 +10,7 @@ Individual protocols can be rendered using the [rmarkdown](http://rmarkdown.rstu
 rmarkdown::render('path/to/protocol.Rmd', output_format = c('html_document', 'pdf_document', 'word_document'))
 ```
 
-This project also has a [Makefile](https://en.wikipedia.org/wiki/Make_(software)) to make it easy to render all Rmarkdown files to all available formats.
+This project also has a [Makefile](https://github.com/EricEdwardBryant/Protocols/blob/master/Makefile) for conveniently rendering all Rmarkdown files to all available formats.
 
 Open the project in Rstudio by opening `Protocols.Rproj`, and press the `Build All` button shown in the image below.
 
