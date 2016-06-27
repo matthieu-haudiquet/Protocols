@@ -1,0 +1,41 @@
+---
+title: "Vector Digest"
+author: "Eric Bryant, eeb2139@columbia.edu"
+date: "June 27, 2016"
+---
+
+## Protocol
+
+It is extremely important that a vector is completely cut to prevent background in transformations.
+
+Cut 3.5 ug of vector for at least 3 hours in a 50 uL reaction. Add the enzyme last. Incubate at temperature appropriate for the enzyme. If cutting out a fragment < 50 bp, isolate cut vector via PCR purification spin column, otherwise gel purify your cut vector by running the entire digest on an agarose gel and cutting out the desired band.
+
+### Example
+
+- Combine the following for a 50 uL digest of 3.5 ug of vector.
+    - **dH~2~O** - 26 uL
+    - **NEBuffer 4 (10x)** - 5 uL
+    - **pWJ1781 (~200ng/uL)** - 17.5 uL
+    - **HpaI (5 U/uL)** - 1.5 uL 
+- Incubate for 3 hours at 37C.
+- Clean digest with PCR purification spin column. Elute in 65 uL dH~2~O
+    - If you are cutting out a large fragment of your vector (> 50 bp), you will need to gel purify by loading your entire sample onto an agarose gel, cutting out the desired band and dissolving the gel in Binding Buffer before proceeding with the typical spin column purification.
+- Run 1 uL of cut and uncut vector on a 1% agarose gel to assess cutting efficiency
+    - *Note: A well cut vector will run as a single discrete band.*
+- Quantitate cut vector on nanodrop.
+
+## Caution
+
+Some enzymes are blocked by certain types of methylation. For example DAM methylation sensitive enzymes will not cut DNA purified from a DAM^+^ strain of *E. coli*.
+
+## Materials
+
+- 3.5 ug of uncut vector
+- Enzyme / buffer ([NEB])
+- 1% agarose gel
+- PCR purification spin column ([Thermo #K0701]), 
+- dH~2~O
+- 2 microfuge tubes per vector.
+
+[Thermo #K0701]: https://www.thermofisher.com/order/catalog/product/K0701
+[NEB]: https://www.neb.com/products/restriction-endonucleases/restriction-endonucleases
