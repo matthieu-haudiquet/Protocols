@@ -9,13 +9,19 @@ all: $(TARGETS)
 default: $(TARGETS)
 
 clean:
-	rm -rf $(TARGETS)
+	@rm -rf $(TARGETS)
+
+html: $(HTML)
+
+pdf: $(PDF)
+
+word: $(WORD)
 
 $(HTML): %.html: %.Rmd
-	Rscript -e 'rmarkdown::render("$<", output_format= "html_document")'
+	@Rscript -e 'rmarkdown::render("$<", output_format= "html_document")'
 
 $(PDF): %.pdf: %.Rmd
-	Rscript -e 'rmarkdown::render("$<", output_format= "pdf_document")'
+	@Rscript -e 'rmarkdown::render("$<", output_format= "pdf_document")'
 
 $(WORD): %.docx: %.Rmd
-	Rscript -e 'rmarkdown::render("$<", output_format= "word_document")'
+	@Rscript -e 'rmarkdown::render("$<", output_format= "word_document")'
