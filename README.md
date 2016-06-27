@@ -39,5 +39,5 @@ make html
 - [Rstudio](https://www.rstudio.com/products/rstudio/download/) (for the nifty "Build All" button)
 - [make](https://en.wikipedia.org/wiki/Make_(software)) (for rendering all protocols)
     - **Mac:** included with command line tools (`xcode-select  --install`)
-    - **Windows:** included with [Rtools](https://cran.r-project.org/bin/windows/Rtools/)
+    - **Windows:** (? halp!) :sob: :sob: :sob:
     - **Linux:** included in the build-essential package (`sudo apt-get install build-essential`)
