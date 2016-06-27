@@ -1,8 +1,8 @@
-# Protocol notebook
+# Protocols
 
 This project contains various lab protocols written in [Rmarkdown](http://rmarkdown.rstudio.com), which can be rendered to HTML, PDF, and Word format. Correctness of protocols is not guaranteed. If you find an issue or want to suggest an improvement, please [submit an issue](https://github.com/EricEdwardBryant/Protocols/issues).
 
-# Rendering protocols
+# Rendering
 
 Individual protocols can be rendered using the [rmarkdown](http://rmarkdown.rstudio.com) package (see [Requirements](#Requirements)).
 
@@ -34,10 +34,10 @@ make html
 # Requirements
 
 - [R](https://cloud.r-project.org)
-- [rmarkdown](http://rmarkdown.rstudio.com) (For Rmarkdown rendering - `install.packages('rmarkdown')`)
-- [LaTeX](https://latex-project.org/ftp.html) (For rendering to PDF)
-- [Rstudio](https://www.rstudio.com/products/rstudio/download/)
-- [make](https://en.wikipedia.org/wiki/Make_(software))
+- [rmarkdown](http://rmarkdown.rstudio.com) (for rendering Rmarkdown - `install.packages('rmarkdown')`)
+- [LaTeX](https://latex-project.org/ftp.html) (for rendering Rmarkdown to PDF)
+- [Rstudio](https://www.rstudio.com/products/rstudio/download/) (for the nifty "Build All" button)
+- [make](https://en.wikipedia.org/wiki/Make_(software)) (for rendering all protocols)
     - **Mac:** included with command line tools (`xcode-select  --install`)
     - **Windows:** included with [Rtools](https://cran.r-project.org/bin/windows/Rtools/)
     - **Linux:** included in the build-essential package (`sudo apt-get install build-essential`)
