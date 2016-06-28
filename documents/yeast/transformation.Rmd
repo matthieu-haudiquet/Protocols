@@ -1,0 +1,72 @@
+---
+title: 'Yeast Transformation'
+author: 'Eric Bryant, eeb2139@columbia.edu'
+date: '`r format(Sys.time(), "%a %b %d, %Y")`'
+---
+
+# LiOAc method
+
+**Note: Work with an open flame to reduce contamination**
+
+1. 5 mL overnight culture (O/N)
+2. In the AM - dilute O/N to OD600 ~0.2
+    - **~15 rxns:** 1 mL O/N into 50 mL YPD in beveled flask
+    - **~2 rxns:** 100 uL O/N into 5 mL YPD in test tube
+3. Grow in 30C shaker to OD600 ~1.0 (3 to 5 hours)
+4. Pellet cells (3000 RPM for 5 min)
+5. Pour off supernatant and gently resuspend cells in 1x TE-LiOAc
+    - **~15 rxns:** resuspend in 9 mL 1x TE-LiOAc
+        - 1 mL 10x TE
+        - 1 mL 10x LiOAc
+        - 8 mL sterile H~2~O
+    - **~2 rxns:** resuspend in 900 uL 1x TE-LiOAc
+        - 100 uL 10x TE
+        - 100 uL 10x LiOAc
+        - 800 uL sterile H~2~O
+6. Pellet cells (3000 RPM for 5 min)
+7. Pour off supernatant and gently resuspend cells in 1x TeLiOAc
+    - **15 rxns:** resuspend in ~600 uL 1x TeLiOAc
+    - **2 rxns:** resuspend in ~80 uL 1x TeLiOAc
+8. For each transformation tube add:
+    - DNA to transform (transformed DNA must contain a selectable marker)
+        - 10 - 100 ng plasmid DNA, or...
+        - 10 - 100 ng cut vector + equivalent ammount of PCR product(s) with >20 bp flanking homology, or...
+        - ~100 ng PCR product with ~300 bp flanking homology for genomic integration
+        - *Note: include 1 reaction with no DNA or just cut vector to assess background transformation*
+    - 50 ug denatured salmon sperm DNA (~5 uL. Boiled on heat block)
+    - 200 uL 1x TE-LiOAc 40% PEG
+        - **~15 rxns:**
+            - 500 uL 10x TE
+            - 500 uL 10x LiOAc
+            - 4 mL 50% PEG
+        - **~2 rxns:**
+            - 50 uL 10x TE
+            - 50 uL 10x LiOAc
+            - 400 uL 50% PEG
+    - 40 uL of competent cells from step 7
+9. Incubate at 30C for > 30 min
+10. Heat shock at 42C for 15 min
+11. If expression period necessary (e.g. Kanamycin etc.) add 1 mL YPD and 
+    incubate at 30C ~1.5 hours.
+12. Plate entire transformation volume with glass beads onto appropriate 
+    selection media.
+13. Incubate at 30C 2-3 days.
+
+\newpage
+
+# Required Stock Buffers
+
+- **10x TE**
+    - 100 mM Tris pH 7.5
+    - 10 mM EDTA
+        - 25 mL 1M Tris pH7.5
+        - 5 mL 0.5 M EDTA pH8.0
+        - 220 mL ddH~2~O
+- **10x LiOAc**
+    - 1M LiOAc
+        - 25.55 g LiOAc (FW = 102.2)
+        - 250 mL H~2~O 
+- **50% PEG**
+    - 50% (w/v) PEG 3350
+        - 250g PEG
+        - 250 mL ddH~2~O
