@@ -1,7 +1,7 @@
 ---
-title: Yeast DNA extraction kit
-author: "Eric Bryant, eeb2139@columbia.edu"
-date: "June 24, 2016"
+title: 'Yeast DNA extraction kit'
+author: 'Eric Bryant, eeb2139@columbia.edu'
+date: '`r format(Sys.time(), "%a %b %d, %Y")`'
 ---
 
 The Rothstein lab has a "Yeast DNA extraction kit" that can be used to purify genomic DNA from yeast (Thermo scientific Prod #78870 stored at bottom of 4C #2). A WT strain grown overnight at 30C in 5mL YPD will yield ~100mg of pelleted cells, which is appropriate for one sample to produce ~250 uL of purified genomic DNA at 100ng/uL. Use ~1 uL of this DNA as template for PCR.
