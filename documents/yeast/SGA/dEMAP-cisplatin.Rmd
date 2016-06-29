@@ -1,0 +1,72 @@
+---
+title: "SGA for cisplatin screen protocol"
+author: "Francois Dossin, dossinf@gmail.com"
+date: '`r format(Sys.time(), "%a %b %d, %Y")`'
+---
+
+The following document is a detailed step-by-step protocol followed to perform E-MAP profiling of genes involved in cisplatin sensitivity.
+
+Briefly, a query strain is individually crossed to a library of cisplatin sensitive mutants before applying a series of selection steps to select for haploid double mutants. These mutants are then grown in the presence of cisplatin and scored for fitness.
+
+Typically, queries were analyzed in groups (batch) of 6 (including the leu2 control query). Each batch was replicated 4 times, and at least one replicate was analyzed as a time series.
+
+All plates should be left in the 37C incubator unless mentioned otherwise.
+
+
+## SGA Protocol
+
+1. **Streaking out:** 3-4 days prior to launching a cross, take query strains out of -80C frrezer and streak for single colonies on YPD+NAT plates.
+
+2. **Liquid cultures:** Once single colonies have grown, pick one per query, and launch overnight liquid cultures (5 mL tubes + YPD, 37C). On that same day, print a copy of the CisPt library on YPD+G418 plates. *If multiple batches are planned to be run on the same day, the library should be printed as many times as there are batches.*
+
+3. **Lawns:** The next morning, pellet cells, resuspend in ~2mL sterile water, spread 400uL on YPD rectangular plates, and make lawns. Let lawns grow overnight at 30C
+
+4. **Mating:** The next morning, cross the lawns to the CisPt library. For each batch:
+    - run **replicate many** program, using the CisPt library as source, and YPD plates as targets. Check **recycle** and **revisit** settings. 384 short pinned pads should be used.
+    - run **replicate** program using each lawn as source, and each YPD plate (previously pinned with CisPt library) as target. **DO NOT** recycle nor revisit. 384 short pinned pads should be used.
+
+5. **Diploid Selection 1:** The next morning, replicate each cross on YPD+G418+NAT plates.
+
+6. **Diploid Selection 2:** The next morning, repeat **step 5**
+
+7. **Sporulation:** The next morning, replicate each plate on Sporulating media (Spo+G418 plates).
+
+8. **Haploid Selection 1:** One week later, replicate each plate on SC-His/Arg/Lys + S-AEC/Can plates
+
+9. **Haploid Selection 2:** 2 days later, repeat **step 8**
+
+10. **Haploid Selection 3:** The next morning, replicate each plate on SC-His/Arg/Lys + S-AEC/Can + **G418** plates.
+
+11. **Haploid Selection 4:** The next morning, replicate each plate on SC-His/Arg/Lys + S-AEC/Can + **G418+NAT** plates.
+
+12. **Prepare CisPt plates** The next day, Cisplatin plates should be prepared (see CisPt plates preparation).
+
+## CisPt plates preparation
+
+All the following steps should be performed no more than one day prior to the screen to ensure maximum stability of the drug in the screening media.
+
+1. **Prepare SC:** Prepare a sufficient volume of SC to cover the number of plates required as well as an additional plate per independent cross.
+
+2. **Prepare cisplatin solution:** One hour before pouring plates, prepare a 0.9% NaCl 1mg/mL cisplatin solution. *To ease solubilization, the solution can be warmed a few minutes in a 50C water bath,*
+
+3. **Media preparation:** In a large flask, mix the appropriate volume of 
+    - SC media
+    - cisplatin solution
+    - G418 *(400-fold dilution from stock)*
+    - NAT *(2000-fold dilution from stock)*
+
+4. **Plate pouring:** Pour 60 mL of media per plate and let dry overnight on the bench. *Covering the plates with foil may prevent photodegradation of the drug and also helps keep the plate surface leveled.*
+
+## Screen
+
+Screening should start two days after the last haploid selection step. Cisplatin plates will have to be prepared one day prior to launching the screen. *(see above)*
+
+1. **384-well plate preparation:** Fill 384-well plates with 80 uL sterile water. *Prepare as many plates as there are independent crosses.*
+
+2. **Resuspension:** Pin from the last haploid selection plate *(384 agar source plate)*, to the 384-well plate from **step 1**, using 384 long pin pads, and the appropriate resuspension program
+
+3. **1:4 liquid to agar pinning:** Pin from the newly resuspended 384 well plate to the Cisptlatin plates. *384 long pin pads should be used. Pinning should be done from a 384 to a 1536 density format. For a given cross, use the same pad across all cisplatin plates, but make sure to start with the lowest cisplatin concentrations. Step 2 and step 3 should be performed as quickly as possible to avoid settling of the yeast in the 384 well plates.* 
+
+4. **Screen** 
+
+## Comments
