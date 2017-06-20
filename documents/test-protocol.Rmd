@@ -1,0 +1,8 @@
+---
+title: "New Protocol"
+author: "Matt, whatever@gmail.com"
+date: '`r format(Sys.time(), "%a %b %d, %Y")`'
+---
+
+First Protocol
+
